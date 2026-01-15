@@ -4,57 +4,57 @@ export const state = {
 
 export const steps = {
   1: {
-    title: "Первые примеры",
-    stage: "Обучение ИИ",
-    bitik: "Мы учим ИИ узнавать рюкзаки.",
-    ai: "Готов учиться!",
-    aiStatus: "Ожидаю примеры…",
+    title: "First Examples",
+    stage: "AI Training",
+    bitik: "We are training AI to recognise backpacks.",
+    ai: "Ready to learn!",
+    aiStatus: "Waiting for examples…",
 
-    aiAfter: "Запомнил первые примеры!",
-    aiStatusAfter: "Теперь я знаю, как выглядит рюкзак."
+    aiAfter: "I’ve remembered the first examples!",
+    aiStatusAfter: "Now I know what a backpack looks like."
   },
 
   2: {
-    title: "Ошибка ИИ",
-    stage: "Проверка теста",
-    bitik: "Проверяем тест.",
-    ai: "Это не рюкзак!",
-    aiStatus: "Запутался…",
+    title: "AI Mistake",
+    stage: "Test Check",
+    bitik: "Checking the test...",
+    ai: "This isn’t a backpack!",
+    aiStatus: "I got confused…",
 
-    aiAfter: "Теперь понимаю, почему ошибся.",
-    aiStatusAfter: "Мне нужно больше примеров!"
+    aiAfter: "Now I understand why I made a mistake.",
+    aiStatusAfter: "I need more examples!"
   },
 
   3: {
-    title: "Доучиваем",
-    stage: "Обучение ИИ",
-    bitik: "Добавим больше примеров.",
-    ai: "Учусь…",
-    aiStatus: "Понимаю лучше.",
+    title: "More Training",
+    stage: "AI Training",
+    bitik: "Let’s add more examples.",
+    ai: "Learning…",
+    aiStatus: "Now I understand better.",
 
-    aiAfter: "Теперь у меня много разных примеров!",
-    aiStatusAfter: "Справлюсь намного лучше."
+    aiAfter: "Now I have lots of different examples!",
+    aiStatusAfter: "I will do much better this time around."
   },
 
   4: {
-    title: "ИИ справился",
-    stage: "Проверка",
-    bitik: "Проверка снова.",
-    ai: "Это рюкзак!",
-    aiStatus: "Теперь понял!",
+    title: "AI Succeeds",
+    stage: "Test",
+    bitik: "Testing again...",
+    ai: "This is a backpack!",
+    aiStatus: "Now I get it!",
 
-    aiAfter: "Да! Теперь я распознаю уверенно!",
-    aiStatusAfter: "Обучение работает!"
+    aiAfter: "Yes! Now I recognise confidently!",
+    aiStatusAfter: "Training works!"
   },
 
   5: {
-    title: "Обман",
-    stage: "Сложная проверка",
-    bitik: "Рюкзак это или нет?",
-    ai: "Хм… похоже…",
-    aiStatus: "Могу ошибаться.",
+    title: "Trick",
+    stage: "Hard Test",
+    bitik: "Is this a backpack or not?",
+    ai: "Hmm… looks like it…",
+    aiStatus: "I might be wrong.",
 
-    aiAfter: "Теперь вижу отличия!",
-    aiStatusAfter: "Не всё круглое — рюкзак."
+    aiAfter: "Now I see the differences!",
+    aiStatusAfter: "Not everything round is a backpack."
   }
 };
