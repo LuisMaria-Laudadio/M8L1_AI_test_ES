@@ -25,7 +25,7 @@ function renderLeft() {
   }
 
   if (state.step === 2 || state.step === 4) {
-    imgs = [[IMAGES.black, "Тест"]];
+    imgs = [[IMAGES.black, "Test"]];
   }
 
   if (state.step === 3) {
