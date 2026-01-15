@@ -10,7 +10,7 @@ export const steps = {
     ai: "Ready to learn!",
     aiStatus: "Waiting for examples…",
 
-    aiAfter: "I’ve remembered the first examples!",
+    aiAfter: "I’ve memorised the first examples!",
     aiStatusAfter: "Now I know what a backpack looks like."
   },
 
