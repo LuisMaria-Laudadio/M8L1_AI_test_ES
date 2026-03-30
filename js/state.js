@@ -26,7 +26,7 @@ export const steps = {
   },
 
   3: {
-    title: "Más formación",
+    title: "Más información",
     stage: "Entrenamiento de IA",
     bitik: "Añadamos más ejemplos.",
     ai: "Aprendiendo…",
