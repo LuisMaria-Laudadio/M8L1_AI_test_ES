@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<body>
+
 <!-- START MODAL -->
 <div id="startModal" class="modal show">
   <div class="modal-box">
@@ -23,61 +25,60 @@
   </div>
 </div>
 
-<body>
-
 <div class="wrapper">
 
   <header class="topbar">
-  <div class="logo">
-    <img src="assets/img/icon_ai.webp" class="logo-icon">
-    <span>Mochila Entrenador de IA</span>
-  </div>
-
-  <div class="progress-box">
-    <div class="progress-container">
-      <div class="progress-bar" id="progressBar"></div>
+    <div class="logo">
+      <img src="assets/img/icon_ai.webp" class="logo-icon">
+      <span>Mochila Entrenador de IA</span>
     </div>
-  </div>
 
-  <div class="step-indicator">
-    <div class="step-circle" id="stepCircle">1</div>
-    <span id="stepTitle">Primeros ejemplos</span>
-  </div>
-</header>
+    <div class="progress-box">
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+
+    <div class="step-indicator">
+      <div class="step-circle" id="stepCircle">1</div>
+      <span id="stepTitle">Primeros ejemplos</span>
+    </div>
+  </header>
 
   <main class="content">
     <section class="left-panel" id="left">
-  <h2 class="panel-title">
-  <span id="leftStage"></span>
-</h2>
-  <div id="imageGrid" class="image-grid"></div>
-</section>
+      <h2 class="panel-title">
+        <span id="leftStage"></span>
+      </h2>
+      <div id="imageGrid" class="image-grid"></div>
+    </section>
 
-<section class="right-panel" id="right">
-  <div class="chat-block">
-    <div class="msg bitik">
-      <div class="avatar">🤖</div>
-      <div class="bubble" id="bitikText">…</div>
-    </div>
+    <section class="right-panel" id="right">
+      <div class="chat-block">
+        <div class="msg bitik">
+          <div class="avatar">🤖</div>
+          <div class="bubble" id="bitikText">…</div>
+        </div>
 
-    <div class="msg ai">
-      <div class="avatar ai-avatar">🧠</div>
-      <div class="bubble ai-bubble">
-        <div id="aiText">…</div>
-        <div class="ai-status" id="aiStatus">…</div>
+        <div class="msg ai">
+          <div class="avatar ai-avatar">🧠</div>
+          <div class="bubble ai-bubble">
+            <div id="aiText">…</div>
+            <div class="ai-status" id="aiStatus">…</div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="controls">
-    <button class="btn btn-main" id="btnTrain">✨ Acción</button>
-    <button class="btn btn-next" id="btnNext">Siguiente ▶</button>
-  </div>
-</section>
+      <div class="controls">
+        <button class="btn btn-main" id="btnTrain">✨ Acción</button>
+        <button class="btn btn-next" id="btnNext">Siguiente ▶</button>
+      </div>
+    </section>
   </main>
 
 </div>
 
 <script type="module" src="js/main.js"></script>
+
 </body>
 </html>
