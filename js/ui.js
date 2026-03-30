@@ -7,7 +7,6 @@ export function render() {
 }
 
 function renderLeft() {
-  const left = document.getElementById("left");
   const leftTitle = document.getElementById("leftStage");
 
   if (leftTitle) {
@@ -18,33 +17,37 @@ function renderLeft() {
 
   if (state.step === 1) {
     imgs = [
-      [IMAGES.red, "Red"],
-      [IMAGES.blue, "Blue"],
-      [IMAGES.toy, "With keychain"]
+      [IMAGES.red, "Rojo"],
+      [IMAGES.blue, "Azul"],
+      [IMAGES.toy, "Con llavero"]
     ];
   }
 
   if (state.step === 2 || state.step === 4) {
-    imgs = [[IMAGES.black, "Test"]];
+    imgs = [[IMAGES.black, "Prueba"]];
   }
 
   if (state.step === 3) {
     imgs = [
-      [IMAGES.red,"Red"],
-      [IMAGES.blue,"Blue"],
-      [IMAGES.toy,"With keychain"],
-      [IMAGES.black,"Black"],
-      [IMAGES.sport,"Sport"],
-      [IMAGES.kid,"Kids"]
+      [IMAGES.red, "Rojo"],
+      [IMAGES.blue, "Azul"],
+      [IMAGES.toy, "Con llavero"],
+      [IMAGES.black, "Negro"],
+      [IMAGES.sport, "Deportivo"],
+      [IMAGES.kid, "Niños"]
     ];
   }
 
   if (state.step === 5) {
-    imgs = [[IMAGES.bag, "Bag"]];
+    imgs = [[IMAGES.bag, "Bolsa"]];
   }
 
-  document.getElementById("imageGrid").innerHTML = `
-    ${imgs.map(([src,label]) => `
+  const grid = document.getElementById("imageGrid");
+
+  if (!grid) return; // evita error
+
+  grid.innerHTML = `
+    ${imgs.map(([src, label]) => `
       <div class="img-card">
         <img src="${src}">
         <div>${label}</div>
@@ -56,6 +59,8 @@ function renderLeft() {
 function renderRight() {
   const r = document.getElementById("right");
   const s = steps[state.step];
+
+  if (!r || !s) return; // evita error
 
   r.innerHTML = `
     <div class="chat-block">
@@ -76,8 +81,8 @@ function renderRight() {
     </div>
 
     <div class="controls">
-      <button class="btn btn-main" id="btnTrain">✨ Action</button>
-      <button class="btn btn-next" id="btnNext" style="display:none;">Next ▶</button>
+      <button class="btn btn-main" id="btnTrain">✨ Acción</button>
+      <button class="btn btn-next" id="btnNext" style="display:none;">Siguiente ▶</button>
     </div>
   `;
 }
